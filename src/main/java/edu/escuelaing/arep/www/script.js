@@ -15,3 +15,17 @@ function loadPostMsg(name) {
         .then(x => x.text())
         .then(y => document.getElementById("postrespmsg").innerHTML = y);
 }
+
+function getPiFromRest() {
+    let url = "/app/pi";
+    fetch(url, { method: 'GET' })
+        .then(x => x.text())
+        .then(y => document.getElementById("getPiRest").innerHTML = y);
+}
+
+function getEulerFromRest() {
+    let url = "/app/euler";
+    fetch(url, { method: 'GET' })
+        .then(x => x.text())
+        .then(y => document.getElementById("getEulerRest").innerHTML = y);
+}

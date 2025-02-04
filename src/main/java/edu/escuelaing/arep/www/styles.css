@@ -111,6 +111,32 @@ body{
     font-weight: bold;
 }
 
+.piContainer{
+    padding: 0px 30px;
+    padding-bottom: 30px;
+    background-color: #d0deff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 80px 0 rgba(62, 64, 64, 0.4);
+    gap:10px;
+}
+
+.eulerContainer{
+    padding: 0px 30px;
+    padding-bottom: 30px;
+    background-color: #d0deff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 80px 0 rgba(62, 64, 64, 0.4);
+    gap:10px;
+}
+
 @media (min-width: 768px) {
     .mainContainer {
         display: flex;

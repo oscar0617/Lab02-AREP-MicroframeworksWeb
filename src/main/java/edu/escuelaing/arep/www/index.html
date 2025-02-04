@@ -2,7 +2,7 @@
 <html lang="es" xml:lang="es">
 
 <head>
-    <title>Aplicaciones Distribuidas</title>
+    <title>Microframeworks Web</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h1 class="titulo">Aplicaciones Distribuidas</h1>
+    <h1 class="titulo">Microframeworks Web</h1>
     <div class="mainContainer">
         <div class="getContainer">
             <h1 class="get">Form with GET</h1>
@@ -34,6 +34,22 @@
                 <input class="boton" type="button" value="Submit" onclick="loadPostMsg(postname)">
             </form>
             <div class="responseJSON" id="postrespmsg"></div>
+        </div>
+        <div class="piContainer">
+            <h1 class="post">Get PI</h1>
+            <img src="https://github.com/oscar0617.png" alt="imagenGit" class="imagenGit">
+            <form action="/pi">
+                <input class="boton" type="button" value="Get PI" onclick="getPiFromRest()">
+            </form>
+            <div class="responseJSON" id="getPiRest"></div>
+        </div>
+        <div class="eulerContainer">
+            <h1 class="post">Get Euler</h1>
+            <img src="https://github.com/oscar0617.png" alt="imagenGit" class="imagenGit">
+            <form action="/euler">
+                <input class="boton" type="button" value="Get Euler" onclick="getEulerFromRest()">
+            </form>
+            <div class="responseJSON" id="getEulerRest"></div>
         </div>
         <script src="script.js"></script>
     </div>
